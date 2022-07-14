@@ -51,9 +51,20 @@ shotwell image.jpg
 ```
 
 
-
-## video
+### 0.3 take video test (not use)
 ```
 sudo apt install ffmpeg
 ffmpeg -f v4l2 -video_size 1280x720 -i /dev/video0 -frames 1 out.jpg
 ```
+
+
+
+## 1. Face detector
+```
+python3 face_detector.py
+```
+
+
+
+## Reference
+- (Face Detection in Python Using a Webcam)[https://realpython.com/face-detection-in-python-using-a-webcam/]
