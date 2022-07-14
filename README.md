@@ -15,7 +15,7 @@ xeyes
 ```
 
 
-### 0.2 check usb camera works
+### 0.2 check if usb camera works
 - check if usb camera is connected
 ```
 lsusb
@@ -44,12 +44,16 @@ fswebcam -d /dev/video1 -r 1280x720 --no-banner image.jpg
 ```
 
 
-## open
+- open image file
+```
 sudo apt-get install shotwell
 shotwell image.jpg
+```
 
 
 
 ## video
+```
 sudo apt install ffmpeg
 ffmpeg -f v4l2 -video_size 1280x720 -i /dev/video0 -frames 1 out.jpg
+```
