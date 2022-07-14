@@ -60,6 +60,13 @@ ffmpeg -f v4l2 -video_size 1280x720 -i /dev/video0 -frames 1 out.jpg
 
 
 ## 1. Face detector
+### 1.1 Install packages
+```
+pip install -r requirements.txt
+```
+
+
+### 1.2 Run
 ```
 python3 face_detector.py
 ```
@@ -67,4 +74,4 @@ python3 face_detector.py
 
 
 ## Reference
-- (Face Detection in Python Using a Webcam)[https://realpython.com/face-detection-in-python-using-a-webcam/]
+- [Face Detection in Python Using a Webcam](https://realpython.com/face-detection-in-python-using-a-webcam/)
